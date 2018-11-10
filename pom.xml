@@ -35,21 +35,6 @@
 			<artifactId>dragonite-sdk</artifactId>
 			<version>0.3.4</version>
 		</dependency>
-		<dependency>
-			<groupId>com.vecsight.dragonite</groupId>
-			<artifactId>dragonite-mux</artifactId>
-			<version>0.3.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.vecsight.dragonite</groupId>
-			<artifactId>dragonite-forwarder</artifactId>
-			<version>0.4.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.vecsight.dragonite</groupId>
-			<artifactId>dragonite-proxy</artifactId>
-			<version>0.4.0</version>
-		</dependency>
 
 		<dependency>
 			<groupId>org.tinylog</groupId>

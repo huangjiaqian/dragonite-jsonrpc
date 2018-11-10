@@ -11,7 +11,6 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.vecsight.dragonite.forwarder.network.server.ForwarderServer;
 import com.vecsight.dragonite.sdk.exception.IncorrectSizeException;
 import com.vecsight.dragonite.sdk.exception.SenderClosedException;
 import com.vecsight.dragonite.sdk.socket.DragoniteServer;
@@ -238,15 +237,6 @@ public class Util {
 	
 	public static final DatagramSocket getDatagramSocket(DragoniteServer server) {
 		return (DatagramSocket) getFieldObj(server, "datagramSocket");
-	}
-	
-	public static final DatagramSocket getDatagramSocket(ForwarderServer server) {
-		DatagramSocket datagramSocket = null;
-		DragoniteServer dragoniteServer = (DragoniteServer) getFieldObj(server, "dragoniteServer");
-		if(dragoniteServer != null) {
-			datagramSocket = getDatagramSocket(dragoniteServer);
-		}
-		return datagramSocket;
 	}
 	
 	public static final Class<?>[] list2ArrCls(List<Class<?>> list) {
